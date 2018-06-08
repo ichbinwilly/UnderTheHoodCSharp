@@ -1,0 +1,8 @@
+c:\users\willy.hsu\documents\visual studio 2015\Projects\UnderTheHoodCSharp\UnderTheHoodCSharp\bin\Debug\UnderTheHoodCSharp.exe.config
+c:\users\willy.hsu\documents\visual studio 2015\Projects\UnderTheHoodCSharp\UnderTheHoodCSharp\obj\Debug\UnderTheHoodCSharp.csprojResolveAssemblyReference.cache
+c:\users\willy.hsu\documents\visual studio 2015\Projects\UnderTheHoodCSharp\UnderTheHoodCSharp\bin\Debug\UnderTheHoodCSharp.exe
+c:\users\willy.hsu\documents\visual studio 2015\Projects\UnderTheHoodCSharp\UnderTheHoodCSharp\bin\Debug\UnderTheHoodCSharp.pdb
+c:\users\willy.hsu\documents\visual studio 2015\Projects\UnderTheHoodCSharp\UnderTheHoodCSharp\bin\Debug\Newtonsoft.Json.dll
+c:\users\willy.hsu\documents\visual studio 2015\Projects\UnderTheHoodCSharp\UnderTheHoodCSharp\bin\Debug\Newtonsoft.Json.xml
+c:\users\willy.hsu\documents\visual studio 2015\Projects\UnderTheHoodCSharp\UnderTheHoodCSharp\obj\Debug\UnderTheHoodCSharp.exe
+c:\users\willy.hsu\documents\visual studio 2015\Projects\UnderTheHoodCSharp\UnderTheHoodCSharp\obj\Debug\UnderTheHoodCSharp.pdb
