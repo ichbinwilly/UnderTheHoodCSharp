@@ -25,7 +25,6 @@ namespace UnderTheHoodCSharp.JsonRelated
             };
             
             Console.WriteLine(JsonConvert.SerializeObject(power, settings));
-            //Console output {"phase":"L1-L2"}
         }
     }
 }

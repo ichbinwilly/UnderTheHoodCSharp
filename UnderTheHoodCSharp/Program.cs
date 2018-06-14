@@ -12,7 +12,6 @@ namespace UnderTheHoodCSharp
         static void Main(string[] args)
         {
             new Example();
-            //Console.ReadLine();
         }
     }
 }
