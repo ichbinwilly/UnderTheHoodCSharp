@@ -6,3 +6,6 @@ c:\users\willy.hsu\documents\visual studio 2015\Projects\UnderTheHoodCSharp\Unde
 c:\users\willy.hsu\documents\visual studio 2015\Projects\UnderTheHoodCSharp\UnderTheHoodCSharp\bin\Debug\Newtonsoft.Json.xml
 c:\users\willy.hsu\documents\visual studio 2015\Projects\UnderTheHoodCSharp\UnderTheHoodCSharp\obj\Debug\UnderTheHoodCSharp.exe
 c:\users\willy.hsu\documents\visual studio 2015\Projects\UnderTheHoodCSharp\UnderTheHoodCSharp\obj\Debug\UnderTheHoodCSharp.pdb
+C:\Users\willy.hsu\Desktop\UnderTheHoodCSharp\UnderTheHoodCSharp\bin\Debug\UnderTheHoodCSharp.exe.config
+C:\Users\willy.hsu\Desktop\UnderTheHoodCSharp\UnderTheHoodCSharp\obj\Debug\UnderTheHoodCSharp.exe
+C:\Users\willy.hsu\Desktop\UnderTheHoodCSharp\UnderTheHoodCSharp\obj\Debug\UnderTheHoodCSharp.pdb
