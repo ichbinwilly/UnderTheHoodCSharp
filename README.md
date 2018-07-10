@@ -1,3 +1,7 @@
+# Notes
+[Enum Converter](https://github.com/ichbinwilly/UnderTheHoodCSharp/blob/master/README.md "Enum Converter")
+[Dynamic Load Assembly](https://github.com/ichbinwilly/UnderTheHoodCSharp/blob/master/UnderTheHoodCSharp/DynamicLoadAssembly/README.md "Dynamic Load Assembly")
+
 # Enum Converter
 
 # Problem to be solved
