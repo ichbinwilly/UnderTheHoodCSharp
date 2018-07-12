@@ -1,4 +1,6 @@
 ## AddSumLibrary Example 
+
+Create a library project and build, you will get a dll file ex: "AddSumLibrary.dll".
 ```csharp
 namespace AddSumLibrary
 {
