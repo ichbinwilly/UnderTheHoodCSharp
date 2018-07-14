@@ -1,6 +1,7 @@
 ## AddSumLibrary Example 
 
-Create a library project and build, you will get a dll file ex: "AddSumLibrary.dll".
+The following is to create a library project. As you build the project, you will get a dll file. Let's say "AddSumLibrary.dll".
+And we want to load assembly dynamically, and invoke the GetSum() to get the result.
 ```csharp
 namespace AddSumLibrary
 {
