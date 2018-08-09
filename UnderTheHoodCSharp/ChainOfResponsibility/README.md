@@ -81,3 +81,21 @@ teamLeader.RequestApplications(requestC);
 //Charles approved the purchase request $10000
 //Hugh approved purchase the request $50000
 ```
+
+## References
+1. https://blogs.msdn.microsoft.com/alikl/2008/01/14/chain-of-responsibility-design-pattern-focus-on-security-performance-and-operations/
+2. https://www.dofactory.com/net/chain-of-responsibility-design-pattern
+3. https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern
+4. https://wizardforcel.gitbooks.io/design-pattern-lessons/content/lesson24.html
+
+## Further reading - 
+
+ASP.NET uses Chain of Responsibility design principle for web request handling. Each web request goes through the chain of handlers (called middleware) a.k.a. ASP.NET HTTP Pipeline - HTTP Modules and Handlers. Each handler might do something with request and decide if request should go to the next handler in a chain or not.
+
+![ASP.NET HTTP Pipeline](https://blogs.sans.org/appsecstreetfighter/files/2009/06/httpmodule.jpg)
+
+1. https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/lifecycle-of-an-aspnet-mvc-5-application
+2. https://msdn.microsoft.com/en-us/library/bb470252.aspx#Life%20Cycle%20Stages
+3. https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-3.0/ms227673(v%3dvs.85)
+4. https://www.cnblogs.com/fish-li/archive/2013/01/04/2844908.html
+5. https://software-security.sans.org/blog/2009/06/14/session-attacks-and-aspnet-part-1
