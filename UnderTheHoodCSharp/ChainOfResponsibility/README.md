@@ -21,47 +21,47 @@ A Budget request should be approved by the managers (Team Leader -> Engineer Man
 In a Manager class, it contains a superior and name property. Take a look at the design diagram. When the client invokes RequestApplications method on concrete Manager implementation, it invokes underneath generic implementation of the method of its base
 ```csharp
 public abstract class Manager
+{
+    public  Manager Superior { get; set; }
+    public string Name { get; set; }
+
+    protected Manager(string name)
     {
-        public  Manager Superior { get; set; }
-        public string Name { get; set; }
-
-        protected Manager(string name)
-        {
-            this.Name = name;
-        }
-
-        public void SetSuperior(Manager superior)
-        {
-            this.Superior = superior;
-        }
-
-        public virtual void RequestApplications(PurchaseRequest request)
-        {
-
-        }
+        this.Name = name;
     }
+
+    public void SetSuperior(Manager superior)
+    {
+        this.Superior = superior;
+    }
+
+    public virtual void RequestApplications(PurchaseRequest request)
+    {
+
+    }
+}
 ```
 
 * Create concrete implementations - A Team Leader can approve the purchase cost under $5000. It's also trivial business logic for Engineer Manager and Chief Financial Officer. 
 ```csharp
-	public override void RequestApplications(PurchaseRequest request)
+public override void RequestApplications(PurchaseRequest request)
+{
+	if (request.Cost <= 5000)
 	{
-		if (request.Cost <= 5000)
-		{
-			Console.WriteLine($"{Name} approved the purchase request ${request.Cost}");
-		}
-		else
-		{
-			Superior?.RequestApplications(request);
-		}
-		base.RequestApplications(request);
+		Console.WriteLine($"{Name} approved the purchase request ${request.Cost}");
 	}
+	else
+	{
+		Superior?.RequestApplications(request);
+	}
+	base.RequestApplications(request);
+}
 ```
 * Setup the chain of resposibility
 ```chsharp
-MyPipeline.TeamLeader teamLeader = new TeamLeader("Alex");
-MyPipeline.EnginnerManager enginnerManager = new EnginnerManager("Charles");
-MyPipeline.ChiefFinancialOfficer chiefFinancialOfficer = new ChiefFinancialOfficer("Hugh");
+TeamLeader teamLeader = new TeamLeader("Alex");
+EnginnerManager enginnerManager = new EnginnerManager("Charles");
+ChiefFinancialOfficer chiefFinancialOfficer = new ChiefFinancialOfficer("Hugh");
 teamLeader.SetSuperior(enginnerManager);
 enginnerManager.SetSuperior(chiefFinancialOfficer);
 ```
