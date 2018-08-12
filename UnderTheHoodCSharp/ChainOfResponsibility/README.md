@@ -1,8 +1,8 @@
 # Chain of Responsibility Pattern
 
-The Chain of Responsibility Pattern is a design pattern that avoids coupling the sender of a request to the receiver by giving one or many handler to handle the request. 
+The Chain of Responsibility Pattern is a design pattern that avoids coupling the sender of a request to the receiver by giving one or many handlers to handle the request.
 
-A real-world example shown below the Chain of Responsibility pattern where the chained managers and executives can agree the purchase request or hand it off to a superior if they cannot approve.  Each position has its own permission which budget they can approve.
+A real-world example is shown below the Chain of Responsibility pattern where the chained managers and executives can approve the purchase request or hand it off to a superior if they cannot approve. Each position has its own permission which budget they can approve.
 
 |Name	  |Position					| Budget Permission|
 |:-------:|:------------------------:|:--------:|
