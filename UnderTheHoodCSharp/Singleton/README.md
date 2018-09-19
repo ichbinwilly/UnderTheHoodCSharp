@@ -25,6 +25,7 @@ What I thought..
 * How can the sole instance of a class be accessed globally?
   > the sole instance can be accessed by exposing a public method to get a instance
 * How can a class control its instantiation?
-
+  > It can be initialized once the class is instantiated (new Class()) -> this is called lazy loading
+  
  
  
