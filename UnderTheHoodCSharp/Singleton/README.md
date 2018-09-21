@@ -24,6 +24,8 @@ What I thought..
   * If a instance is not existed, a instance can be created
 * How can the sole instance of a class be accessed globally?
   > the sole instance can be accessed by exposing a public method to get a instance
+    * How?
+      * Write a GetInstance() method to get the instance of class
 * How can a class control its instantiation?
   > It can be initialized once the class is instantiated (new Class()) -> this is called lazy loading
   
