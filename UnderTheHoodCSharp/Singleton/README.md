@@ -19,7 +19,7 @@ According to [w3sDesign](http://w3sdesign.com/?gr=c05&ugr=proble), it lists the 
 
 What I thought..
 * How can be ensured that a class has only one instance?
-  > a instance can only be created (new Class()) only one time 
+  > a instance can only be created (new Class()) only one time. Let's say, the caller can only access one instance in the class.
   * If a instance is existed, return an existed one
   * If a instance is not existed, a instance can be created
 * How can the sole instance of a class be accessed globally?
