@@ -25,9 +25,11 @@ What I thought..
 * How can the sole instance of a class be accessed globally?
   > the sole instance can be accessed by exposing a public method to get a instance
     * How?
-      * Write a GetInstance() method to get the instance of class
+      * Write a GetInstance() method to get the instance of class (make sure that static operation is used)
+    * use private construction so that other programers won't initialize it
 * How can a class control its instantiation?
   > It can be initialized once the class is instantiated (new Class()) -> this is called lazy loading
-  
+* How can the number of instances of a class be restricted?
+  > It can be assigned a number while the instance is established (new Class(num))
  
  
