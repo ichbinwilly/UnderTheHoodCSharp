@@ -19,17 +19,28 @@ According to [w3sDesign](http://w3sdesign.com/?gr=c05&ugr=proble), it lists the 
 
 What I thought..
 * How can be ensured that a class has only one instance?
-  > a instance can only be created (new Class()) only one time. Let's say, the caller can only access one instance in the class.
+  > a instance can only be created (new Singleton()) only one time. Let's say, the caller can only access one instance in the class.
   * If a instance is existed, return an existed one
   * If a instance is not existed, a instance can be created
 * How can the sole instance of a class be accessed globally?
   > the sole instance can be accessed by exposing a public method to get a instance
     * How?
       * Write a GetInstance() method to get the instance of class (make sure that static operation is used)
+      ```csharp
+      Singleton _singleton;
+      public static Singleton GetInstance()
+      {
+        if(_singleton == null)
+          _singleton = new Singleton();
+      }
+      ```
     * use private construction so that other programers won't initialize it
+    ```csharp
+    private Singleton(){}
+    ```
 * How can a class control its instantiation?
-  > It can be initialized once the class is instantiated (new Class()) -> this is called lazy loading
+  > It can be initialized once the class is instantiated (new Singleton()) -> this is called lazy loading
 * How can the number of instances of a class be restricted?
-  > It can be assigned a number while the instance is established (new Class(num))
- 
+  > It can be assigned a number while the instance is established (new Singleton(num))
+ * How to assure that the Singleton is thread-safety?
  
