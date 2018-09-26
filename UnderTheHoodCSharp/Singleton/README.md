@@ -38,9 +38,14 @@ What I thought..
     ```csharp
     private Singleton(){}
     ```
-* How can a class control its instantiation?
-  > It can be initialized once the class is instantiated (new Singleton()) -> this is called lazy loading
+* How can a class control its instantiation? **
+  > It can be initialized once the class is instantiated (new Singleton())
 * How can the number of instances of a class be restricted?
   > It can be assigned a number while the instance is established (new Singleton(num))
- * How to assure that the Singleton is thread-safety?
+ * How to assure that the Singleton is thread safe?
+  > Declare a static member which initialze the new Singleton() -> Eager Loading
+  > Use the lock object to force every thread to wait its turn so that no two threads enter the method simultaneously
+    > Declare the static object (lock mechanism) in the class Singleton
+    > Use MethodImpl Annotation with Synchronized
+
  
