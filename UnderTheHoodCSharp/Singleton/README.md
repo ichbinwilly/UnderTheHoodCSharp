@@ -44,6 +44,9 @@ What I thought..
   > It can be assigned a number while the instance is established (new Singleton(num))
  * How to assure that the Singleton is thread safe?
     * Declare a static member which initialze the new Singleton() -> Eager Loading
+      ```csharp
+        private static readonly Singleton uniqueInstanceEager = new Singleton();
+      ```    
     * Use the lock object to force every thread to wait its turn so that no two threads enter the method simultaneously
       * Declare the static object (lock mechanism) in the class Singleton
         ```csharp
