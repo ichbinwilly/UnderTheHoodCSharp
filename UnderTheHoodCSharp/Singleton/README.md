@@ -60,7 +60,7 @@ What I thought..
           ...
         }
         ```
-## Full Code Snippet
+## Code Snippet
 ```csharp
     public class Singleton
     {
