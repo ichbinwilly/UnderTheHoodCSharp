@@ -60,5 +60,64 @@ What I thought..
           ...
         }
         ```
+### Full Code Snippet
+```csharp
+    public class Singleton
+    {
+        #region Fields
+        private static Singleton _singleton;
+        private static readonly Singleton _singletonEagerLoading = new Singleton();
+        private static object syncRoot = new object();
+        #endregion
 
- 
+        #region Constructor
+        // Private Construction
+        private Singleton()
+        {
+        }
+        #endregion
+
+        #region Methods
+        /// <summary>
+        /// GetInstance() It's not thread safe method
+        /// </summary>
+        /// <returns>Singleton Object</returns>
+        public static Singleton GetInstance()
+        {
+            if (_singleton == null)
+            {
+                _singleton = new Singleton();
+            }
+
+            return _singleton;
+        }
+
+        /// <summary>
+        /// Eager Loading
+        /// </summary>
+        /// <returns></returns>
+        public static Singleton GetInstanceEager()
+        {
+            return _singletonEagerLoading;
+        }
+
+        /// <summary>
+        /// Use the lock to assure no other threads enter the method at the same time
+        /// </summary>
+        /// <returns>Singleton Object</returns>
+        //Alternative Method
+        //[MethodImpl(MethodImplOptions.Synchronized)]
+        public static Singleton GetInstanceSynchronized()
+        {
+            lock (syncRoot)
+            {
+                if (_singleton == null)
+                {
+                    _singleton = new Singleton();
+                }
+            }
+            return _singleton;
+        }
+        #endregion
+    }
+```
