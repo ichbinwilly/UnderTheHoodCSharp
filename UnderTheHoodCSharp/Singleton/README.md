@@ -60,24 +60,19 @@ What I thought..
           ...
         }
         ```
-### Full Code Snippet
+## Full Code Snippet
 ```csharp
     public class Singleton
     {
-        #region Fields
         private static Singleton _singleton;
         private static readonly Singleton _singletonEagerLoading = new Singleton();
         private static object syncRoot = new object();
-        #endregion
 
-        #region Constructor
         // Private Construction
         private Singleton()
         {
         }
-        #endregion
 
-        #region Methods
         /// <summary>
         /// GetInstance() It's not thread safe method
         /// </summary>
@@ -93,7 +88,7 @@ What I thought..
         }
 
         /// <summary>
-        /// Eager Loading
+        /// Get Instance in the Eager Loading way
         /// </summary>
         /// <returns></returns>
         public static Singleton GetInstanceEager()
@@ -118,6 +113,5 @@ What I thought..
             }
             return _singleton;
         }
-        #endregion
     }
 ```
